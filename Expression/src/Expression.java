@@ -8,7 +8,7 @@ public class Expression {
     private BinaryTree<String> treeExpression;
     private String parenthesizedInfix;
     private String assemblyCode;
-    private static byte[][] prioritize= {
+    private static byte[][] prioritize= { //to declare prioritaize of each operator in stack
             {-1,2,0,0,0,0,0,0},
             {-1,1,1,1,1,1,1,1},
             {-1,1,0,1,0,1,0,0},
@@ -18,7 +18,7 @@ public class Expression {
             {-1,1,1,1,1,1,0,1},
             {-1,1,0,1,0,1,0,0}
     };
-    public Expression(String expression){
+    public Expression(String expression){   
         setExpression(expression);
         try {
             setInfix();
